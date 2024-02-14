@@ -30,30 +30,34 @@ const BannerV5 = () => {
 
     const postData = async (e) => {
         e.preventDefault();
-
+    
+        const { name, number, email, city, grade } = user;
+    
         const formData = new URLSearchParams();
         formData.append('name', name);
         formData.append('number', number);
         formData.append('email', email);
         formData.append('city', city);
         formData.append('grade', grade);
-        
+    
         const res = await fetch(`${Apiurl}/register`, {
             method: "POST",
             headers: {
-                "Content-Type" : "application/x-www-form-urlencoded"
+                "Content-Type": "application/x-www-form-urlencoded"
             },
             body: formData
         });
+    
         const data = await res.json();
-
-        if(data.status === 422 || !data){
+    
+        if (data.status === 422 || !data) {
             window.alert("Failed to Registered");
-        }else{
+        } else {
             window.alert("Congrats your Registration has been Successfully Completed");
             e.target.reset();
         }
     }
+    
 
     // const form = useRef();
 
