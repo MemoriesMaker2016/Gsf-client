@@ -5,6 +5,7 @@ import Parallax from 'parallax-js';
 import TimeV1 from '../counter/TimeV1';
 import emailjs from '@emailjs/browser';
 import Apiurl from '../../config';
+import { useSearchParams } from 'react-router-dom';
 
 
 const BannerV5 = () => {
@@ -30,18 +31,19 @@ const BannerV5 = () => {
     const postData = async (e) => {
         e.preventDefault();
 
-        const {name, number, email, city, grade} = user;
-
+        const formData = new URLSearchParams();
+        formData.append('name', name);
+        formData.append('number', number);
+        formData.append('email', email);
+        formData.append('city', city);
+        formData.append('grade', grade);
+        
         const res = await fetch(`${Apiurl}/register`, {
             method: "POST",
             headers: {
-                "Content-Type" : "application/json"
+                "Content-Type" : "application/x-www-form-urlencoded"
             },
-            body: JSON.stringify({
-
-                name, number, email, city, grade
-
-            })
+            body: formData
         });
         const data = await res.json();
 
