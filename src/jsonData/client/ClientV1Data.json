@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Platinum Sponsors",
+        "clientData": [
+            {
+                "id": 1,
+                "clientThumb": "GE-Logo2.png"
+            },
+            {
+                "id": 2,
+                "clientThumb": "HRM-Logo.png"
+            },
+            {
+                "id": 3,
+                "clientThumb": "mbs_school.png"
+            },
+            {
+                "id": 4,
+                "clientThumb": "sps.jpeg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Gold Sponsors",
+        "clientData": [
+            {
+                "id": 1,
+                "clientThumb": "9.png"
+            },
+            {
+                "id": 2,
+                "clientThumb": "10.png"
+            },
+            {
+                "id": 3,
+                "clientThumb": "11.png"
+            },
+            {
+                "id": 4,
+                "clientThumb": "12.png"
+            }
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "tabClass": "show active",
+        "tabId": "tab-1",
+        "tabData": [
+            {
+                "id": 1,
+                "eventThumb": "event-detail.jpg",
+                "blockClass": "",
+                "sessionStart": "Delhi",
+                "speakerThumb": "thumb-1.jpg",
+                "name": "Global Scholars Forum",
+                "designation": "2024",
+                "text1": "Delhi at The Lalit Hotel – Invitation to Delhi, Noida, and Ghaziabad Schools",
+                "text2": "09:30 Am - 18:30 Pm",
+                "btnLink": "event-detail",
+                "btnText": "Read More"
+            },
+            {
+                "id": 2,
+                "eventThumb": "event-detail-2.jpg",
+                "blockClass": "even",
+                "sessionStart": "Guru",
+                "sessionEnd": "gram",
+                "speakerThumb": "thumb-2.jpg",
+                "name": "Global Scholars Forum",
+                "designation": "2024",
+                "text1": "Gurugram – Invitation to Gurugram and Faridabad Schools",
+                "text2": "09:00 Am - 11:00 Am",
+                "btnLink": "event-detail",
+                "btnText": "Read More"
+            },
+            {
+                "id": 3,
+                "eventThumb": "event-detail-3.jpg",
+                "blockClass": "",
+                "sessionStart": "Sonipat",
+                "speakerThumb": "thumb-3.jpg",
+                "name": "Global Scholars Forum",
+                "designation": "2024",
+                "text1": "Sonipat (Swarnprastha Public School)",
+                "text2": "09:00 Am - 03:00 Pm",
+                "btnLink": "event-detail",
+                "btnText": "Read More"
+            },
+            {
+                "id": 2,
+                "eventThumb": "event-detail-2.jpg",
+                "blockClass": "even",
+                "sessionStart": "Chandi",
+                "sessionEnd": "garh",
+                "speakerThumb": "thumb-4.jpg",
+                "name": "Global Scholars Forum",
+                "designation": "2024",
+                "text1": "Chandigarh Hotel (TBA)",
+                "text2": "09:00 Am - 05:00 Pm",
+                "btnLink": "event-detail",
+                "btnText": "Read More"
+            },
+            {
+                "id": 3,
+                "eventThumb": "event-detail-3.jpg",
+                "blockClass": "",
+                "sessionStart": "Jaipur",
+                "speakerThumb": "thumb-5.jpg",
+                "name": "Global Scholars Forum",
+                "designation": "2024",
+                "text1": "Jaipur Hotel (TBA)",
+                "text2": "09:00 Am - 05:00 Pm",
+                "btnLink": "event-detail",
+                "btnText": "Read More"
+            }
+        ]
+    }
+]

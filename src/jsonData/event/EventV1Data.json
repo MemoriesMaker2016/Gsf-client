@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "tabId": "tab1",
+        "tabClass": "active show",
+        "icon": "icon far fa-calendar",
+        "title": "April 28, 2024",
+        "text": "9.00 AM - 07.30 PM",
+        "icon1": "icon icon_profile",
+        "icon2": "icon icon_phone",
+        "icon3": "icon icon_mail",
+        "list1": "Team GSF",
+        "list2": "+91 84476 49809",
+        "list3": "contact@globalscholarsforum.com",
+        "infoList": ""
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "icon": "icon flaticon-lecture",
+        "title": "World Class Universities",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd.",
+        "animation": "fadeInUp",
+        "delay": 0
+    },
+    {
+        "id": 2,
+        "icon": "icon flaticon-search",
+        "title": "Wide range of courses",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd.",
+        "animation": "fadeInUp",
+        "delay": 0
+    },
+    {
+        "id": 3,
+        "icon": "icon flaticon-diamond-1",
+        "title": "Scholarship and Financial Aid",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd.",
+        "animation": "fadeInUp",
+        "delay": 400
+    },
+    {
+        "id": 4,
+        "icon": "icon flaticon-success",
+        "title": "MNCs and Job Opportunities",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd.",
+        "animation": "fadeInUp",
+        "delay": 800
+    },
+    {
+        "id": 5,
+        "icon": "icon flaticon-employee",
+        "title": "Quality of Life",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd.",
+        "animation": "fadeInUp",
+        "delay": 1200
+    }
+]

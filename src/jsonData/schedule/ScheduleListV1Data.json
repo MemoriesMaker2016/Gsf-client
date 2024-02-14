@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "listClass": "active",
+        "dataTarget": "#tab-1",
+        "day": "Day 01 - Delhi",
+        "date": "28",
+        "month": "Apr",
+        "year": 2024
+    },
+    {
+        "id": 2,
+        "listClass": "",
+        "dataTarget": "#tab-2",
+        "day": "Day 02 - Gurugram",
+        "date": "29",
+        "month": "Apr",
+        "year": 2024
+    },
+    {
+        "id": 3,
+        "listClass": "",
+        "dataTarget": "#tab-3",
+        "day": "Day 03 - Sonipat",
+        "date": "30",
+        "month": "Apr",
+        "year": 2024
+    },
+    {
+        "id": 4,
+        "listClass": "",
+        "dataTarget": "#tab-4",
+        "day": "Day 04 - Chandigarh",
+        "date": "01",
+        "month": "Apr",
+        "year": 2024
+    },
+    {
+        "id": 5,
+        "listClass": "",
+        "dataTarget": "#tab-4",
+        "day": "Day 05 - Jaipur",
+        "date": "02",
+        "month": "May",
+        "year": 2024
+    }
+]

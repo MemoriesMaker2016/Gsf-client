@@ -1,0 +1,57 @@
+
+[
+    {
+        "id": 1,
+        "icon": "IoIosPaper",
+        "about": "One-Stop Information Hub",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    },
+    {
+        "id": 2,
+        "icon": "icon flaticon-search",
+        "about": "Face-to-face Interaction",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    },
+    {
+        "id": 3,
+        "icon": "icon flaticon-diamond-1",
+        "about": "Information on Scholarships",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    },
+    {
+        "id": 4,
+        "icon": "icon flaticon-success",
+        "about": "No Registration Fee",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    },
+    {
+        "id": 5,
+        "icon": "fab fa-paper",
+        "about": "Visa and application Guidance",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    },
+    {
+        "id": 6,
+        "icon": "icon flaticon-success",
+        "about": "No Service Charges",
+        "text": "Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt.",
+        "btnIcon": "fa fa-angle-right",
+        "btnClass": "theme-btn",
+        "animation": "fadeInUp"
+    }
+]
