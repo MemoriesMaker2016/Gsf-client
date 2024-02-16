@@ -1,2 +1,2 @@
-const Apiurl = "https://backendapi-eotg.onrender.com"
+const Apiurl = "https://backendapi.globalscholarsforum.com"
 export default Apiurl
