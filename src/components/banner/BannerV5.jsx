@@ -4,6 +4,8 @@ import BannerV2Data from '../../jsonData/banner/BannerV2Data.json';
 import Parallax from 'parallax-js';
 import TimeV1 from '../counter/TimeV1';
 import { useSearchParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Apiurl from '../../config';
 
 const BannerV5 = () => {
@@ -17,7 +19,7 @@ const BannerV5 = () => {
 
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
-    const [ display , setdisplay]= useState(false)
+
 
     const handleInputs = (e) => {
         const { name, value } = e.target;
@@ -26,15 +28,24 @@ const BannerV5 = () => {
 
     const postData = async (e) => {
         e.preventDefault();
-        setLoading(true);
-
+        
         const formData = new URLSearchParams();
         formData.append('name', user.name);
         formData.append('number', user.number);
         formData.append('email', user.email);
         formData.append('city', user.city);
         formData.append('grade', user.grade);
+        
+        if (!user.name || !user.number || !user.email || !user.city || !user.grade) {
+            setMessage("Please fill all the fields properly.");
+            toast('Please fill all the fields properly.')
+            return;
+        }
+        setLoading(true);
+    
+       
 
+        
         try {
             const res = await fetch(`${Apiurl}/register`, {
                 method: "POST",
@@ -50,6 +61,7 @@ const BannerV5 = () => {
                 setMessage("Failed to register");
             } else {
                 setMessage("Registration successful");
+                toast("Congrats! you have successfully registered")
                 setUser({
                     name: '',
                     number: '',
@@ -60,11 +72,14 @@ const BannerV5 = () => {
             }
         } catch (error) {
             console.error("Error:", error);
-            setMessage("please fill you form properly")
-            setMessage("An error occurred. Please try again later.");
-        } finally {
+            setMessage("please fill you form properly", error)
+ 
+        }
+        
+        finally {
             setLoading(false);
         }
+    
     };
 
     const time = new Date("Apr 28 2024");
@@ -80,24 +95,6 @@ const BannerV5 = () => {
     }, []);
 
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <400) {
-             
-                setdisplay(true )
-                console.log("sdfsdf", display);
-            }
-            else
-            {
-                setdisplay(false )
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
 
 
@@ -111,9 +108,7 @@ const BannerV5 = () => {
                             <div className='form'>
                                 <span className='title'>Register Now - For Students</span>
                                 <form>
-                                {
-                                    display ? <span  className=' text-red-700'> {message}</span> : "" 
-                                }
+                              
                                     
                                     <div className='input-field'>
                                         <input type='text' name='name' value={user.name} onChange={handleInputs} placeholder='Full Name' required className='form-control' />
@@ -149,10 +144,7 @@ const BannerV5 = () => {
                                     <TimeV1 expiryTimestamp={time} />
                                 </div>
                                 <div className="btn-box"><Link to={void (0)} className="theme-btn btn-style-two"><span className="btn-title">Booking Now</span></Link></div>
-                                {
-                                    display ? "" : <span  className=' text-red-700'> {message}</span> 
-                                }
-                                    
+                            
                             </div>
                         </div>
                         <div className="icons parallax-scene-1" ref={sceneRef}>

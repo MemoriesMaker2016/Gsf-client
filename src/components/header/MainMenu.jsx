@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link'
 
-const MainMenu = ({ parentMenu, toggleMenu, toggleMultiMenu }) => {
+const MainMenu = ({ parentMenu , toggleMenu, toggleMultiMenu }) => {
     return (
         <>
-            <ul className="navigation clearfix">
+            <ul className="navigation clearfix ">
             {/* <li className='current'><Link to='/'>Home</Link></li> */}
-                <li className={`dropdown ${parentMenu === 'home' ? 'current' : ''} `}>
-                    <Link to='/' onClick={toggleMenu}>Home</Link>
+                <li className={`dropdown  ${parentMenu === 'home' ? 'current' : ''} `}>
+                    <Link to='/' onClick={toggleMenu} >Home</Link>
                     {/* <ul className='sub-menu'>
                         <li><Link to="/#">Home Classic</Link></li>
                         <li><Link to="/home-2#">Home Conference</Link></li>
@@ -28,8 +28,8 @@ const MainMenu = ({ parentMenu, toggleMenu, toggleMultiMenu }) => {
                     </ul> */}
                     {/* <div className="dropdown-btn" ><span className="fa fa-angle-down"></span></div> */}
                 </li>
-                <li className={`dropdown ${parentMenu === 'about' ? 'current' : ''}`}>
-                <Link to='/about-us'>About</Link>
+                <li className={`dropdown  ${parentMenu === 'about' ? 'current' : ''}`}>
+                <Link to='/about-us' >About</Link>
                 {/* <li className='dropdown'>
                     <Link to='/about-us' onClick={toggleMenu}>About</Link>
                     <ul className='sub-menu'>
@@ -69,8 +69,8 @@ const MainMenu = ({ parentMenu, toggleMenu, toggleMultiMenu }) => {
                     </ul>
                     <div className="dropdown-btn"><span className="fa fa-angle-down"></span></div>
                 </li> */}
-                <li><Link to='/contact'>Contact</Link></li>
-                <div className="btn-box main-btn-box">
+                <li className={`dropdown  ${parentMenu === 'contact' ? 'current' : ''}`}><Link to='/contact'>Contact</Link></li>
+                <div className="btn-box main-btn-box hidden">
                     <Link to='https://memoriesmakeredu.com/' target='_blank' className="theme-btn btn-style-one"><span className="btn-title">Visit Memories Maker</span></Link>
                 </div>
             </ul>

@@ -95,16 +95,20 @@ const HeaderV1 = ({ headerStyle, whiteLogo = false, headerTopV1, headerTopV2, pa
                         <div className="nav-outer clearfix">
                             <div className="mobile-nav-toggler" onClick={handleOpenMenu}><span className="icon flaticon-menu"></span></div>
                             <nav className="main-menu navbar-expand-lg navbar-light">
-                                <div className="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                   
+                                <div className=" navbar-collapse clearfix max-[989px]:hidden" id="navbarSupportedContent">
                                     <MainMenu parentMenu={parentMenu} />
-                                </div>
+                                    
+
+                                    </div>
+                                
                             </nav>
                             <div className='d-flex' style={{alignItems:'center'}}>
                             <div className="outer-box d-none d-lg-block">
                                 {/* <div className="search-box-outer">
                                     <div className="search-box-btn"><span className={`flaticon-search`} onClick={searchOpen}></span></div>
                                 </div> */}
-                                <div className="btn-box">
+                                <div className="btn-box ">
                                     <Link to='https://memoriesmakeredu.com/' target='_blank' className="theme-btn btn-style-one"><span className="btn-title">Visit Memories Maker</span></Link>
                                 </div>
                             </div>
